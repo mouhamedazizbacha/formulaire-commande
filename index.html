@@ -16,7 +16,7 @@
 document.getElementById("commandeForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  fetch("URL_DU_WEB_APP_ICI", {
+  fetch("https://script.google.com/macros/s/AKfycbwFUZIvSTKzwoI7mUI-v929QA4ZPX-cFlFc_W84C-3MVW-ObXk6Jc5uQ7jUJhlotdQ8/exec", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -34,3 +34,4 @@ document.getElementById("commandeForm").addEventListener("submit", function(e) {
   .catch(err => alert("Erreur d'envoi"));
 });
 </script>
+
